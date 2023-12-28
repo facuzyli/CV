@@ -1,0 +1,22 @@
+{
+    "menu": {
+      "home": "Inicio",
+      "work": "Trabajo",
+      "study": "Estudio",
+      "aboutMe": "Sobre Mí",
+      "contact": "Contacto",
+      "downloadCV": "Descargar CV"
+    },
+    "pages": {
+      "home": {
+        "title": "Bienvenido a Mi Portafolio",
+        "description": "Explora más sobre mí y mi trabajo."
+      },
+      "work": {
+        "title": "Mi Experiencia Laboral",
+        "description": "Aquí puedes encontrar mi historial laboral."
+      }
+      
+    }
+   
+  }
