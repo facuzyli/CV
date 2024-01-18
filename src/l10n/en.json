@@ -1,21 +1,44 @@
 {
-    "menu": {
-      "home": "Home",
-      "work": "Work",
-      "study": "Study",
-      "aboutMe": "About Me",
-      "contact": "Contact",
-      "downloadCV": "Download CV"
+  "menu": {
+    "curriculum": "Resume",
+    "work": "Work",
+    "study": "Study",
+    "aboutMe": "About Me",
+    "contact": "Contact"
+  },
+  "work": [
+    {
+      "title": "Analista Funcional",
+      "description": "<p>Elaboré documentación técnica y funcional.</p><br/><p>Utilicé metodologías ágiles como Scrum.</p><br/><p>Programé en proyectos innovadores.</p><br/><p>Administré y optimicé bases de datos.</p><br/><p>Mantuve y soporté proyectos existentes.</p><br/><p>Definí casos de uso y pruebas.</p><br/><p>Identifiqué mejoras en procesos y sistemas.</p>",
+      "fecha": "Oct 2022 - Actualidad",
+      "foto": "/assets/img/dikter.png"
     },
-    "pages": {
-      "home": {
-        "title": "Welcome to My Portfolio",
-        "description": "Explore more about me and my work."
-      },
-      "work": {
-        "title": "My Work Experience",
-        "description": "Here you can find my employment history."
-      }
+    {
+      "title": "Security Delivery Associate",
+      "description": "<p>Implementé soluciones de seguridad.</p><br/><p>Supervisé y monitoreé sistemas de seguridad.</p><br/><p>Realicé análisis de riesgos y vulnerabilidades",
+      "fecha": "Jul 2022 - Sep 2022",
+      "foto": "/assets/img/accenture - copia.png"
+    },
+    {
+      "title": "Tecnico en Electronica y Telecomunicaciones",
+      "description": "Description of my second work",
+      "fecha": "May 2021 - Jul 2022",
+      "foto": "/assets/img/fonoglobal.png"
+    }
+  ],
+  "study": [
+    {
+      "title": "Systems Engineering",
+      "description": "I studied Systems Engineering at XYZ University, specializing in software development and networking.",
+      "fecha": "2015 - 2020",
+      "foto": "/assets/img/university.jpg"
+    },
+    {
+      "title": "Web Development Course",
+      "description": "I completed an intensive web development course, focusing on modern technologies like React and Node.js.",
+      "fecha": "2021",
+      "foto": "/assets/img/web-course.jpg"
     }
     
-  }
+  ]
+}

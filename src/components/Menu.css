@@ -1,0 +1,51 @@
+.menucontenedor {
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100vh; /* Altura completa de la ventana del navegador */
+    display: flex; /* Usa flexbox para centrar los elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center;
+  }
+  
+  .menucontenedor ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menucontenedor ul li {
+    margin: 10px 0;
+  }
+  
+  .menucontenedor ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 3em;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .menucontenedor ul li a .hover-text {
+    display: none;
+    position: fixed; /* Posición fija en relación con la ventana */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
+  
+  .menucontenedor ul li a:hover {
+    color: #000;
+    font-size: 2.5em;
+  }
+  
+  .menucontenedor ul li a:hover .hover-text {
+    display: block;
+  }
+  
+  .menucontenedor ul li:not(:hover) a {
+    opacity: 0.5;
+  }
+  

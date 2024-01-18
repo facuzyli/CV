@@ -1,22 +1,42 @@
 {
-    "menu": {
-      "home": "Inicio",
-      "work": "Trabajo",
-      "study": "Estudio",
-      "aboutMe": "Sobre Mí",
-      "contact": "Contacto",
-      "downloadCV": "Descargar CV"
+  "menu": {
+    "curriculum": "Curriculum",
+    "work": "Trabajo",
+    "study": "Estudio",
+    "aboutMe": "Sobre Mí",
+    "contact": "Contacto"
+  },
+  "work": [
+    {
+      "title": "My First trabajo",
+      "description": "Description of my first work",
+      "foto": "foto1.png"
     },
-    "pages": {
-      "home": {
-        "title": "Bienvenido a Mi Portafolio",
-        "description": "Explora más sobre mí y mi trabajo."
-      },
-      "work": {
-        "title": "Mi Experiencia Laboral",
-        "description": "Aquí puedes encontrar mi historial laboral."
-      }
-      
+    {
+      "title": "My Second Work",
+      "description": "Description of my second work",
+      "foto": "foto2.png"
+    },
+    {
+      "title": "My theard Work",
+      "description": "Description of my second work",
+      "foto": "foto3.png"
+    }
+  ],
+  "study": [
+    {
+      "title": "Systems Engineering",
+      "description": "I studied Systems Engineering at XYZ University, specializing in software development and networking.",
+      "fecha": "2015 - 2020",
+      "foto": "/assets/img/university.jpg"
+    },
+    {
+      "title": "Web Development Course",
+      "description": "I completed an intensive web development course, focusing on modern technologies like React and Node.js.",
+      "fecha": "2021",
+      "foto": "/assets/img/web-course.jpg"
     }
    
-  }
+  ]
+
+}

@@ -1,0 +1,119 @@
+#container-slider {
+    position: relative;
+    width: 100%;
+    max-height: 100vh; /* Altura máxima igual al alto de la pantalla */
+    overflow: hidden; /* Ocultar cualquier contenido que exceda el tamaño del contenedor */
+  }
+  
+  /* Estilos para el slider */
+  #slider {
+    position: relative;
+    height: 100vh; /* Ajustar la altura del slider al 100% del alto de la pantalla */
+  }
+  
+  /* Estilos para cada slide individual */
+  #slider .slide {
+    display: none; /* Ocultar todos los slides por defecto */
+    opacity: 0;
+    transition: opacity 1s;
+    height: 100%; /* Asegurar que cada slide ocupe todo el alto del contenedor */
+  }
+  
+  /* Estilos para el slide activo */
+  #slider .slide.active {
+    display: block; /* Mostrar solo el slide activo */
+    opacity: 1;
+  }
+  
+  /* Estilos para la imagen dentro de cada slide */
+  #slider .slide img {
+    width: auto; /* Mantener la relación de aspecto de la imagen */
+    max-height: 25vh; /* Ajustar el alto de la imagen a un cuarto del alto de la pantalla */
+    object-fit: cover; /* Ajustar el tamaño de la imagen */
+    margin: auto; /* Centrar la imagen horizontalmente */
+    display: block; /* Asegurar que la imagen se muestre como un bloque */
+  }
+  
+  /* Estilos para el contenido del slider */
+  .content_slider {
+    background: rgba(0, 0, 0, 0.50); /* Fondo oscuro para el texto */
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para el título dentro del contenido del slider */
+  .content_slider h2 {
+    font-size: 24pt; /* Ajusta el tamaño del título */
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para la descripción dentro del contenido del slider */
+  .content_slider div {
+    font-size: 3vh; /* Ajusta el tamaño del texto */
+    margin-left: 15vw; /* Reduce el espacio entre párrafos */
+    line-height: 0; /* Ajusta el interlineado para mejorar la legibilidad */
+    color: #FFF;
+    text-align: justify; /* Opcional: Justifica el texto para
+  un aspecto más uniforme */
+  }
+  
+  /* Estilos para los saltos de línea si se utilizan */
+  br {
+  margin-bottom: 10px; /* Ajusta según sea necesario */
+  }
+  
+  /* Estilos para la fecha dentro del contenido del slider */
+  .work-date {
+  font-size: 12pt; /* Ajusta el tamaño de la fecha */
+  color: #FFF;
+  margin-top: 10px;
+  }
+  
+  /* Estilos para los botones de navegación previa y siguiente */
+  .arrowPrev, .arrowNext {
+  font-size: 30pt;
+  color: rgba(204, 204, 204, 0.65);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  }
+  
+  /* Posicionamiento específico para el botón previo */
+  .arrowPrev {
+  left: 50px;
+  }
+  
+  /* Posicionamiento específico para el botón siguiente */
+  .arrowNext {
+  right: 50px;
+  }
+  
+  /* Estilos para pantallas más pequeñas (responsive design) */
+  @media screen and (max-width: 460px) {
+  .content_slider h2 {
+  font-size: 18pt;
+  }
+  
+  .content_slider div {
+  font-size: 12pt;
+  }
+  
+  .arrowPrev, .arrowNext {
+  font-size: 20pt;
+  left: 15px;
+  right: 15px;
+  }
+  
+  /* Ajustar el alto de la imagen en pantallas pequeñas */
+  #slider .slide img {
+  max-height: 200px;
+  }
+  
+  /* Ajustar el padding del contenido en pantallas pequeñas */
+  .content_slider {
+  padding: 10px;
+  }
+  }

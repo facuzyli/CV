@@ -1,20 +1,15 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useLocalization } from '../LocalizationContext';
 
-function LanguageSelector() {
-  const { i18n } = useTranslation();
-
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+const LanguageSelector = () => {
+  const { setLanguage } = useLocalization();
 
   return (
-    <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={i18n.language}>
+    <select onChange={(e) => setLanguage(e.target.value)}>
       <option value="en">English</option>
       <option value="es">Español</option>
-      {/* Más idiomas si es necesario */}
     </select>
   );
-}
+};
 
 export default LanguageSelector;
